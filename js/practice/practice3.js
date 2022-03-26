@@ -11,18 +11,18 @@ false - выводит в консоль главный объект прогр�
 genres
 
 P.S. Функции вызывать не обязательно*/
-    let numberOfFilms;
+    let personalMovieDB.count;
 
 function start() {
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
-    while (numberOfFilms =='' || numberOfFilms==null || isNaN(numberOfFilms)) { 
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
+    personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели', '');
+    while (personalMovieDB.count =='' || personalMovieDB.count==null || isNaN(personalMovieDB.count)) { 
+        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели', '');
     }
 }
 start();
 
 const personalMovieDB = {
-    count: numberOfFilms,
+    count: personalMovieDB.count,
     movies: {},
     actors: {},
     genres: [],
